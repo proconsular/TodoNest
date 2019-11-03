@@ -1,0 +1,22 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "root",
+    "database": "todo-nest",
+    "synchronize": true,
+    "logging": false,
+    "entities": [
+       "./dist/entity/**/*{.ts,.js}"
+    ],
+    "migrations": [
+       "dist/migration/**/*.ts"
+    ],
+    "subscribers": [
+       "dist/subscriber/**/*.ts"
+    ],
+    "cli": {
+        "entitiesDir": "src/entity"
+    }
+ }
